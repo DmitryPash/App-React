@@ -9,8 +9,8 @@ const PostList = ({posts__news, posts__title}) => {
         <div>
             <h1>{posts__title}</h1>
             <div className='Container__latestsNews'>
-                {posts__news.map(posts__news =>
-                <LattestNewsList posts__news={posts__news} key={posts__news.id}/> 
+                {posts__news.map((posts__news, index) =>
+                <LattestNewsList number={index + 1}  posts__news={posts__news} key={posts__news.id}/> 
                 
             )}
 

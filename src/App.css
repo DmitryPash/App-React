@@ -4,9 +4,6 @@
   box-sizing: border-box;
 }
 
-.App {
-  
-}
 
 .Container {
   width: 1170px;
@@ -97,13 +94,16 @@
 
 .blocks__news {
   height: 180px;
-  width: 180px;
+  width: 100%;
   background-color: #999;
+  text-align: center;
 }
 
 .Container__latestsNews {
   display: flex;
-  justify-content: space-between;
+  flex-direction: column;
+  text-align: center;
+  /* justify-content: space-between; */
 }
 
 
